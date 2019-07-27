@@ -1,0 +1,23 @@
+<input [(ngModel)] = "search" >
+ <br>
+ <br>
+  <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="center">
+   
+
+        
+        <ng-container   *ngFor="let serverinfo of serverdata | filter : search" >
+            
+           
+        <div class="total"fxFlex="0 1 calc(33.3% - 32px)">
+        <img class="card-img-top" src="{{serverinfo.rust_headerimage}}">
+        <h5  class="card-title">{{serverinfo.name}}</h5>
+        <p class="card-body">{{serverinfo.rust_description}}</p>
+        <h3 class="card-body">{{serverinfo.players}}</h3>
+        <h5 class="card-body">{{serverinfo.tags}}</h5>
+        
+     
+     
+        
+          
+    
+    
