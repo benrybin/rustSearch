@@ -31,6 +31,9 @@ export class RustlistComponent implements OnInit {
       let descrip = data.data[i].attributes.details.rust_description;
       let name = data.data[i].attributes.name;
       let img = data.data[i].attributes.details.rust_headerimage;
+      if(img ===""){
+        img = 'https://steamcdn-a.akamaihd.net/steam/apps/252490/header.jpg?t=1562144597';
+      }
       let tag_search = data.data[i].attributes.details.rust_description;
       let tags =[];
       if(data.data[i].attributes.details.rust_modded === false){

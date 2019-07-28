@@ -7,7 +7,7 @@ export class FilterPipe implements PipeTransform {
       if(!items) return [];
       if(!search) return items;
   search = search.toLowerCase();
-  return items.filter( it => { return it.name.toLowerCase().includes(search)
+  return items.filter( it => { return it.rust_description.toLowerCase().includes(search)
     
     });
 }

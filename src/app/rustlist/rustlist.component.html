@@ -1,4 +1,13 @@
+<div fxLayoutAlign="center" >
+
+        <h3>Welcome to rustSearch</h3>
+</div>
+
+<div fxLayoutAlign="center" >
+    
+    <br>
 <input [(ngModel)] = "search" >
+</div>
  <br>
  <br>
   <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="center">
@@ -9,11 +18,11 @@
             
            
         <div class="total"fxFlex="0 1 calc(33.3% - 32px)">
-        <img class="card-img-top" src="{{serverinfo.rust_headerimage}}">
-        <h5  class="card-title">{{serverinfo.name}}</h5>
+        <img align="center" class="card-img-top" src="{{serverinfo.rust_headerimage}}">
+        <h5 align="center" class="card-title">{{serverinfo.name}}</h5>
         <p class="card-body">{{serverinfo.rust_description}}</p>
-        <h3 class="card-body">{{serverinfo.players}}</h3>
-        <h5 class="card-body">{{serverinfo.tags}}</h5>
+        <h3 align="center" class="card-body">{{serverinfo.players}}</h3>
+        <h5 align="center"class="card-body">{{serverinfo.tags}}</h5>
         
      
      
